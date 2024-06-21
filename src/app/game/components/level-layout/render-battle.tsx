@@ -34,8 +34,6 @@ const RenderBattle = ({ level = null, onClose, isOpen, onBattleEnd }: any) => {
     [battle?.combatans]
   );
 
-  console.log("combatan", battle?.combatans?.opponent);
-
   const { turn, inSequence, playerHealth, opponentHealth, announcerMessage } =
     useBattleSequence(sequence, {
       player: player?.stats,

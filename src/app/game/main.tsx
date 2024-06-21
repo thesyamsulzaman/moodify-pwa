@@ -4,7 +4,6 @@ import { SPRITESHEET_IMAGE_SRC } from "~/constants/helpers";
 import RenderLevel from "./components/level-layout/render-level";
 import levels from "./levels/levels-map";
 import soundManager from "./classes/sounds";
-import journalEntry from "./classes/journal-entry";
 import progressEntry from "./classes/progress-entry";
 
 interface SpriteSheetImage {
@@ -14,7 +13,6 @@ interface SpriteSheetImage {
 }
 
 soundManager.init();
-journalEntry.promptEntry();
 
 type GameProviderProps = { children: React.ReactNode };
 

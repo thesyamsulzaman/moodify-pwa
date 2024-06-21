@@ -7,6 +7,13 @@ const GEMINI_TOKEN = process.env.NEXT_GEMINI_TOKEN;
 
 const genAI = new GoogleGenerativeAI(GEMINI_TOKEN);
 
+const wait = (ms) =>
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  });
+
 const backstoriesSchema = [
   {
     type: "message",
@@ -97,15 +104,17 @@ export async function POST(request: Request) {
   const body = await request.json();
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-    const prompt = generatePrompts({
-      qty: 10,
-      journal: body?.journal,
-    });
+    // const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    // const prompt = generatePrompts({
+    //   qty: 10,
+    //   journal: body?.journal,
+    // });
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const jsonData = jsonParser(response.text());
+    // const result = await model.generateContent(prompt);
+    // const response = await result.response;
+
+    await wait(1500);
+    const jsonData = jsonParser(body?.journal);
 
     return Response.json({ data: jsonData });
   } catch (error) {

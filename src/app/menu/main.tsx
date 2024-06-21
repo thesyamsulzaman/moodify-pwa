@@ -10,8 +10,7 @@ import Dialog, { DialogType } from "../game/components/hud/dialog";
 import { CHARACTERS, TUTORIAL_DIALOGS } from "~/constants/dialogs";
 import GuidePopup from "../game/components/ui/guide-popup";
 import { COGNITIVE_DISTORTIONS } from "~/constants/dialogs";
-import Body from "../game/components/object-graphics/body";
-import Sprite from "../game/components/object-graphics/sprite";
+import journalEntry from "../game/classes/journal-entry";
 
 const MainMenu = () => {
   const navigate = useRouter();
@@ -31,6 +30,8 @@ const MainMenu = () => {
 
     try {
       setIsSubmitting(true);
+
+      journalEntry.save(journal);
       const res = await fetch("/api/distortions", {
         method: "POST",
         headers: {
@@ -55,11 +56,7 @@ const MainMenu = () => {
     {
       title: "Mulai Permainan",
       onClick: () => {
-        if (progressEntry.get()?.hasCompletedTutorial) {
-          setScreen("journaling");
-        } else {
-          setScreen("tutorial");
-        }
+        setScreen("tutorial");
       },
     },
     ...(progressEntry?.get()?.checkpoint
@@ -67,7 +64,9 @@ const MainMenu = () => {
           {
             title: "Lanjutkan Permainan",
             onClick: () => {
-              setScreen("journaling");
+              journalEntry.hasWroteToday()
+                ? navigate.push("/game")
+                : setScreen("journaling");
             },
           },
         ]
