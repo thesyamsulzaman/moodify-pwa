@@ -49,11 +49,30 @@ export const COGNITIVE_DISTORTIONS = [
     description:
       "Pola pikir seperti ini sering menggunakan kata kata “selalu”, “tidak pernah”, “selamanya”. Pikiran seperti itu sangat jarang sesuai dengan kenyataan. Oleh karena itu, kata kata ‘selalu”, “tidak pernah”, “selamanya” perlu dikurangi dari perbendaharaan kata kita karena sifatnya yang “mutlak” atau absolut. Keadaan yang memerlukan kata kata mutlak seperti itu sangat jarang terjadi dan sebaiknya hanya dipakai bila benar benar sesuai dengan situasi yang ada.",
   },
-
   {
     title: "All or nothing thinnking (pola pikir: hitam-putih)",
     description:
       "Berikut ini pola pikir yang sebaiknya dipakai Amir ketika dia gagal masuk ke FK UGM. “Saya pingin sekali kuliah di FK UGM, tapi ternyata banyak anak yang lebih pintar dan lebih banyak belajar sehingga merekalah yang diterima. Saya memang sangat kecewa, tetapi bukan berarti saya telah gagal total atau saya bodoh sekali sehingga tidak punya masa depan. Saya akan belajar lebih giat lagi dan mendaftar ke universitas lain yang masih buka. Saya juga akan mencoba daftar ke fakultas lain yang mungkin lebih cocok dengan kelebihan saya.",
+  },
+  {
+    title: "Pola pikir over-generalization",
+    description:
+      "Bila seseorang mempunyai pola pikir over-generalization (gebyah uyah, terlalu menyama ratakan), maka satu kejadian yang berdiri sendiri dianggap sebagai mewakili semuanya. Apakah benar bahwa semua orang itu jahat dan tidak ada yang menyukai Endang? Bagaimana dengan beberapa temannya yang mengajaknya makan siang bersama di sebuah restaurant? Kejadian itu menunjukkan bahwa masih ada orang yang memperhatikan Endang dan menyukainya.",
+  },
+  {
+    title: "Pola pikir mental filter",
+    description:
+      "Orang yang terperangkap pola pikir mental filter, maka yang bersangkutan hanya mengambil sisi negatif saja dan tidak menghiraukan atau melupakan sisi positifnya. Untuk menghilangkan pola pikir tersebut, kita perlu mulai melihat sisi positif dari setiap keadaan.  Pada contoh kasus Nurul diatas, Nurul akan senang hatinya bila dia lebih mengingat dan memperhatikan pemuda simpatik yang menyerahkan kursi duduk di bus yang pada kepadanya.",
+  },
+  {
+    title: "Pola pikir disqualifyiing positive",
+    description:
+      "Orang dengan pola pikir disqualifying positif selalu tidak mempercayai atau menolak informasi yang bersifat positif. Hal ini banyak terjadi pada orang dengan kepercayaan diri yang rendah. Untuk mengatasi hal tersebut, bila lain waktu ada yang memuji atau menyanjung dirinya, Rita sebaiknya cukup menjawab dengan ucapan :”terima kasih”, sambil tersenyum. Hiraukan atau lupakan bisikan dihati yang mengatakan bahwa orang tersebut memujinya hanya untuk berbasa-basi. Dengan menghilangkan pola pikir disqualifying positif sedikit demi sedikit, hidup akan terasa lebih menyenangkan.",
+  },
+  {
+    title: "Pola pikir jump to conclusin",
+    description:
+      "Salah satu pola pikir yang negatif adalah “loncat ke kesimpulan” (jumping to conclusions). Pada orang dengan pola pikir “loncat ke kesimpulan”, maka yang bersangkutan telah mengambil kesimpulan tanpa melihat kepada bukti bukti nyata yang mendukungnya.",
   },
 ];
 
